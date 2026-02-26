@@ -12,7 +12,8 @@ def intro():
 """)
     print("welcome to hangman")
 
-
+# this will display the hangman display. 
+# The stage is calculated based on the difficulty chosen and number of incorrect guesses 
 def show_guy(guesses_left, max_guesses):
     stages = [
         """
@@ -82,7 +83,7 @@ def show_guy(guesses_left, max_guesses):
     status= int((max_guesses - guesses_left) / max_guesses * (len(stages) - 1))
     return stages[status]
 
-
+#processes player input makes sure input is single letter and formats it into uppercase for latter comparison
 def player_guess(guess):
     while len(guess) != 1 or not guess.isalpha():
         print("please only enter one letter")
@@ -108,7 +109,7 @@ def set_difficulty(level):
     elif dif == 3:
         return 5
     
-
+# gets a random word from included animals.txt file. If file is not present defaults to 2 player mode
 def get_word(file_path):
     try:
         with open(file_path, "r") as f:
@@ -144,7 +145,7 @@ def validate_word(word):
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
-
+#main game loop
 def game():
     state = True
     while state:
