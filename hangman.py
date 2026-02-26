@@ -2,9 +2,6 @@ import random
 import os
 file_path="C:/Users/Computer/Python/hangman/animals.txt"
 
-##TODO 
-##show the guy
-##format output
 def intro():
     print("""
  _   _    _    _   _  ____ __  __    _    _   _
