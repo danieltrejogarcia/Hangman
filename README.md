@@ -6,7 +6,7 @@ This is a console based Hangman game I created as a refresher of python knowledg
 both a single player mode and a 2 player mode
 simple ascii graphics displaying your progress
 
-**How to play:**
+**How to play:<br>**
 1.Run python hangman.py<br>
 2.Select the difficulty<br>
 3.Choose the number of players. If 2 player mode is selected chose secret word<br>
